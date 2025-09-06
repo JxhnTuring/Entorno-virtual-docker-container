@@ -3,4 +3,6 @@
   <li><code>docker run -it --name arch-container -v "C:\Users\jjaid\OneDrive\Desktop\tudu:/tudu" -w /tudu archlinux:latest bash
 </code></li> Crear el contenedor con la imagen oficial de archlinux
   <li><code>pacman -S nodejs npm</code></li> Para instalar nodejs y npm
+  <li><code>docker start -ai arch-container
+</code></li> para correr nuevamente el contenedor
 </ul>
