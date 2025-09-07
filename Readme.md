@@ -5,5 +5,5 @@
   <li>Crear el contenedor para el server</li>
   <code>docker run -it --name server -v ${PWD}/tudu-server:/app -w /app -p 8080:8080 node:20 bash</code>
   <li>Para abrir los contenedores despues de apagados</li>
-  <code>docker start -ai <nombre-container></code>
+  <code>docker start -ai nombre-container</code>
 </ul>
