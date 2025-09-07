@@ -1,8 +1,9 @@
-<h1>Instalar entorno archlinux en contendor docker</h1>
+<h1>Crear contenedores con imagen nodejs</h1>
 <ul>
-  <li><code>docker run -it --name arch-container -v "C:\Users\jjaid\OneDrive\Desktop\tudu:/tudu" -w /tudu archlinux:latest bash
-</code></li> Crear el contenedor con la imagen oficial de archlinux
-  <li><code>pacman -S nodejs npm</code></li> Para instalar nodejs y npm
-  <li><code>docker start -ai arch-container
-</code></li> para correr nuevamente el contenedor
+  <li>Crear el contenedor para el cliente</li>
+  <code>docker run -it --name client -v ${PWD}/tudu-client:/app -w /app -p 5173:5173 node:20 bash</code>
+  <li>Crear el contenedor para el server</li>
+  <code>docker run -it --name server -v ${PWD}/tudu-server:/app -w /app -p 8080:8080 node:20 bash</code>
+  <li>Para abrir los contenedores despues de apagados</li>
+  <code>docker start -ai <nombre-container></code>
 </ul>
